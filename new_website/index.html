@@ -3,7 +3,7 @@
 <!--[if IE 9]> <html lang="en" class="ie9"> <![endif]-->
 <!--[if !IE]><!--> <html lang="en"> <!--<![endif]-->
 <head>
-	<title>Unify | Creative One Page Theme</title>
+	<title>Common Garden</title>
 
 	<!-- Meta -->
 	<meta charset="utf-8">
@@ -171,73 +171,6 @@ The data-spy and data-target are part of the built-in Bootstrap scrollspy functi
 			</div>
 		</li>
 
-		<!-- SLIDE 2 -->
-		<li data-transition="slideup" data-slotamount="5" data-masterspeed="1000" data-title="Slide 2">
-			<!-- MAIN IMAGE -->
-			<img src="assets/img/sliders/revolution/bg2.jpg" alt="slidebg1"  data-bgfit="cover" data-bgposition="center center" data-bgrepeat="no-repeat">
-
-			<!-- LAYERS -->
-			<div class="tp-caption rs-caption-1 sft start"
-			data-x="center"
-			data-hoffset="0"
-			data-y="100"
-			data-speed="800"
-			data-start="1500"
-			data-easing="Back.easeInOut"
-			data-endspeed="300">
-			Making it easier to grow food in cities
-		</div>
-
-		<!-- LAYER -->
-		<div class="tp-caption rs-caption-2 sft"
-		data-x="center"
-		data-hoffset="0"
-		data-y="200"
-		data-speed="1000"
-		data-start="2500"
-		data-easing="Power4.easeOut"
-		data-endspeed="300"
-		data-endeasing="Power1.easeIn"
-		data-captionhidden="off"
-		style="z-index: 6">
-		We are creative technology company providing<br>
-		tools to enable urban farming.
-	</div>
-
-	<!-- LAYER -->
-	<div class="tp-caption rs-caption-3 sft"
-	data-x="center"
-	data-hoffset="0"
-	data-y="360"
-	data-speed="800"
-	data-start="3500"
-	data-easing="Power4.easeOut"
-	data-endspeed="300"
-	data-endeasing="Power1.easeIn"
-	data-captionhidden="off"
-	style="z-index: 6">
-	<span class="page-scroll"><a href="#about" class="btn-u btn-brd btn-brd-hover btn-u-light">Learn More</a></span>
-	<span class="page-scroll"><a href="#portfolio" class="btn-u btn-brd btn-brd-hover btn-u-light">Our Work</a></span>
-</div>
-</li>
-
-<!-- SLIDE 3 -->
-<li data-transition="slideup" data-slotamount="5" data-masterspeed="700"  data-title="Slide 3">
-	<!-- MAIN IMAGE -->
-	<img src="assets/img/sliders/revolution/bg3.jpg"  alt="slidebg1"  data-bgfit="cover" data-bgposition="center center" data-bgrepeat="no-repeat">
-
-	<!-- LAYERS -->
-	<div class="tp-caption rs-caption-1 sft start"
-	data-x="center"
-	data-hoffset="0"
-	data-y="110"
-	data-speed="800"
-	data-start="1500"
-	data-easing="Back.easeInOut"
-	data-endspeed="300">
-	WE DO THINGS DIFFERENTLY
-</div>
-
 <!-- LAYER -->
 <div class="tp-caption rs-caption-2 sfb"
 data-x="center"
@@ -283,24 +216,25 @@ style="z-index: 6">
 	<div class="block-v1">
 		<div class="container">
 			<div class="row content-boxes-v3">
+				<!-- <h1>We support 3rd party hardware</h1> -->
 				<div class="col-md-4 md-margin-bottom-30">
 					<i class="icon-custom rounded-x icon-bg-dark fa fa-lightbulb-o"></i>
 					<div class="content-boxes-in-v3">
-						<h2 class="heading-sm">Creative Desgin</h2>
+						<h2 class="heading-sm">Open Source</h2>
 						<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's</p>
 					</div>
 				</div>
 				<div class="col-md-4 md-margin-bottom-30">
 					<i class="icon-custom rounded-x icon-bg-dark fa fa-flask"></i>
 					<div class="content-boxes-in-v3">
-						<h2 class="heading-sm">Web Development</h2>
+						<h2 class="heading-sm">Interoperable by design</h2>
 						<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's</p>
 					</div>
 				</div>
 				<div class="col-md-4">
 					<i class="icon-custom rounded-x icon-bg-dark fa fa-bolt"></i>
 					<div class="content-boxes-in-v3">
-						<h2 class="heading-sm">Online Marketing</h2>
+						<h2 class="heading-sm">Standards track</h2>
 						<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's</p>
 					</div>
 				</div>
@@ -324,8 +258,7 @@ style="z-index: 6">
 		<div class="container content-lg">
 			<div class="title-v1">
 				<h2>Our Vision And Mission</h2>
-				<p>We <strong>meet</strong> and get to know you. You tell us and we listen. <br>
-					We build your website to realise your vision and we <strong>deliver</strong> the ready product.</p>
+				<p></p>
 				</div>
 
 				<div class="row">
@@ -982,6 +915,22 @@ style="z-index: 6">
 			StyleSwitcher.initStyleSwitcher();
 			RevolutionSlider.initRSfullScreen();
 		});
+	</script>
+	<script type="text/javascript">
+	  (function ($, undefined) {
+	  var roleList = ["medicine", "materials", "subsistence", "profit", "enjoyment", "food", "a better world"]
+
+	  function rollRole() {
+	    roleList.push(roleList.shift())
+
+	    $('#role').fadeOut(function () {
+	      $(this).text(roleList[0]).fadeIn()
+	    })
+	  }
+
+	  // Rotate title, etc.
+	  setInterval(rollRole, 5000);
+	  })(jQuery);
 	</script>
 	<!--[if lt IE 9]>
 		<script src="assets/plugins/respond.js"></script>
