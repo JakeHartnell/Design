@@ -1,0 +1,27 @@
+/* Add here all your css styles (customizations) */
+
+.call-to-action {
+	position: absolute;
+	top: 50px;
+	color: white;
+	padding: -100px;
+	margin: 100px;
+}
+
+.call-to-action p {
+	font-size: 2em;
+	color: white;
+}
+
+#call-to-action-background {
+	background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(/assets/img/bg1.jpg);
+	background-size: cover;
+	height: 500px;
+	width: 100%;
+}
+
+input.transparent-input{
+	background-color: rgba(0, 0, 0, 0.38) !important;
+    border: 1px solid rgba(204, 204, 204, 0.69) !important;
+    color: white;
+}
