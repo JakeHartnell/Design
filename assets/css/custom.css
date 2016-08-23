@@ -8,6 +8,12 @@
 	margin: 100px;
 }
 
+.one-page-header {
+    border-bottom: none;
+    background: rgba(0,0,0,0);
+    position: absolute;
+}
+
 .call-to-action p {
 	font-size: 2em;
 	color: white;
